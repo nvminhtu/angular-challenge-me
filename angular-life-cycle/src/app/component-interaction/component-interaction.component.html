@@ -1,0 +1,13 @@
+<h3>Component Interaction</h3>
+<p>Page Title: {{ pageTitle }}</p>
+<img src="{{ imgUrl ? imgUrl : noImageUrl }}" alt="{{ pageTitle }}" />
+
+<p>Event Binding</p>
+<div>
+  <button (click)="incrementCounter()">Increment Counter</button>
+  <p>{{ count }}</p>
+</div>
+
+<p>ngModel</p>
+<input type="text" [(ngModel)]="name" />
+<p>Welcome {{ name }}</p>

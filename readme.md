@@ -34,4 +34,6 @@
 
 ### YOUTUBE
 
-### CONNECT PEOPLE, LEARN FROM PAID COURSE (Udemy, Codeacademy,....)
+### LEARN FROM PAID COURSE (Udemy, Codeacademy,....)
+
+### CONNECT / ASK QUESTIONS & ANSWERS
