@@ -16,11 +16,11 @@
 
 ## ANGULAR LEARNING
 
-### ANGULAR BASIC
+### 01.ANGULAR BASIC
 
-### ANGULAR ADVANCED
+### 02.ANGULAR ADVANCED
 
-#### MY PROJECTS:
+### 03. MY PROJECTS:
 
 - [Angular CRUD](https://github.com/nvminhtu/angular-crud)
 
