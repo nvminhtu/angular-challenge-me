@@ -12,12 +12,35 @@ export class ComponentInteractionComponent implements OnInit {
   noImageUrl: string = 'https://via.placeholder.com/300';
   count: number = 0;
   name: string = '';
+  username: string = '';
+  exampleMember: string = 'Peter';
+
+  // getter/ setters
+  private _customerName: string = '';
 
   constructor() {}
 
   ngOnInit(): void {}
 
+  get customerName(): string {
+    return this._customerName;
+  }
+  set customerName(value: string) {
+    this._customerName = value;
+    if (value === 'Peter' || value === 'peter') {
+      alert('Hello Peter!');
+    }
+  }
+
   incrementCounter(): void {
     this.count++;
+  }
+
+  greetingOldMember(updatedValue: string): void {
+    this.username = updatedValue;
+
+    if (updatedValue === this.exampleMember) {
+      alert(`Welcome back ${this.exampleMember}`);
+    }
   }
 }

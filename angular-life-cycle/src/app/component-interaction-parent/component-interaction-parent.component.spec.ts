@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ComponentInteractionParentComponent } from './component-interaction-parent.component';
+
+describe('ComponentInteractionParentComponent', () => {
+  let component: ComponentInteractionParentComponent;
+  let fixture: ComponentFixture<ComponentInteractionParentComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ ComponentInteractionParentComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(ComponentInteractionParentComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

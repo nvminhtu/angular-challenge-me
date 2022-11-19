@@ -11,3 +11,19 @@
 <p>ngModel</p>
 <input type="text" [(ngModel)]="name" />
 <p>Welcome {{ name }}</p>
+
+<!-- <p>ngModel - cách 2</p>
+<input type="text" [ngModel]="username" (ngModelChange)="username = $event" />
+<p>Welcome {{ username }}</p> -->
+
+<p>ngModel - change username</p>
+<input
+  type="text"
+  [ngModel]="username"
+  (ngModelChange)="greetingOldMember($event)"
+/>
+<p>Welcome {{ username }}</p>
+
+<p>ngModel - customer name</p>
+<input type="text" [(ngModel)]="customerName" />
+<p>Welcome {{ customerName }}</p>
