@@ -1,0 +1,19 @@
+<h2>Log Service</h2>
+<ul>
+  <li>{{ infoMessage }}</li>
+  <li>{{ warningMessage }}</li>
+  <li>{{ errorMessage }}</li>
+</ul>
+
+<h2>Date Time Service:</h2>
+<p>Hello Tu, this is your current Date & Time:</p>
+<p>Date: {{ currentDate }}</p>
+<p>Time: {{ currentTime }}</p>
+
+<h2>Todo List Service:</h2>
+<ul class="todo">
+  <li *ngFor="let todo of todos">
+    {{ todo.title }}
+    {{ todo.description }}
+  </li>
+</ul>
