@@ -1,7 +1,12 @@
-<app-toggle [(checked)]="check" (outputFromChild)="receiveChildData($event)">
+<app-toggle [(checked)]="questions.question1">
   <h3 class="toogle-header">Header 1</h3>
+  <p>Toggle Content 01</p>
+  <label ngProjectAs="app-label">Question 1</label>
+  <!-- angular tu sx thu tu theo dung chuan cua component goi toi -->
 </app-toggle>
 
-<app-toggle [(checked)]="check" (outputFromChild)="receiveChildData($event)">
+<app-toggle [(checked)]="questions.question2">
   <h3 class="toogle-header">Header 2</h3>
+  <label>Question 2</label>
+  <p>Toggle Content 02</p>
 </app-toggle>

@@ -9,6 +9,11 @@ export class ToggleWrapperComponent implements OnInit {
   check: boolean = false;
   childMessage?: string;
 
+  questions = {
+    question1: true,
+    question2: false,
+  };
+
   constructor() {}
   ngOnInit(): void {}
 
