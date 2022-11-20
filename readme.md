@@ -16,6 +16,10 @@
 
 ## 02. BASIC ANGULAR <CODING>
 
+- [01. Angular Component] (https://github.com/nvminhtu/angular-challenge-me/tree/main/angular-components)
+- [02. Angular Life Cycle] (https://github.com/nvminhtu/angular-challenge-me/tree/main/angular-life-cycle)
+- [02. Angular Services] (https://github.com/nvminhtu/angular-challenge-me/tree/main/angular-services)
+
 ## 03. MY MINI PROJECTS:
 
 - [Angular CRUD](https://github.com/nvminhtu/angular-crud)
@@ -29,7 +33,7 @@
 1. **Learn syntax Angular: Codevolution**
    [https://www.youtube.com/watch?v=mDoHtD1hI3I&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=3](https://www.youtube.com/watch?v=mDoHtD1hI3I&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=3)
 
-2. **oshuaMorony**
+2. **JoshuaMorony**
    [https://www.youtube.com/c/JoshuaMorony](https://www.youtube.com/c/JoshuaMorony
 
 ### LEARN FROM PAID COURSE (Udemy, Codeacademy,....)
