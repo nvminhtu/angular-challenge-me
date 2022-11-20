@@ -6,6 +6,7 @@ import { TimeService } from 'src/app/services/time.service';
 import { Todo, TodoListService } from 'src/app/services/todo/todo-list.service';
 import { TodoListPublicService } from 'src/app/services/todo/todo-list-public.service';
 import { TodoListPrivateService } from 'src/app/services/todo/todo-list-private.service';
+import { Movie, MovieService } from 'src/app/services/movie/movie.service';
 
 @Component({
   selector: 'app-school',
@@ -28,10 +29,14 @@ export class SchoolComponent implements OnInit {
   // todos
   todos: Todo[] = []; // initial the data
 
+  // movoe
+  movies: Movie[] = []; // initial the movie
+
   constructor(
     private LoggerService: LoggerService,
     private TimeService: TimeService,
-    private todoListService: TodoListService
+    private todoListService: TodoListService,
+    private movieService: MovieService
   ) {
     // init for Log Message
     this.infoMessage = this.LoggerService.log(
@@ -53,7 +58,14 @@ export class SchoolComponent implements OnInit {
 
     // init for Todos
     this.todos = this.todoListService.getTodos();
+
+    this.movieService.searchMovie('Batman').subscribe((result) => {
+      this.movies = result.Search;
+    });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // init for Movie Service
+    //this.movies = this.movieService.
+  }
 }

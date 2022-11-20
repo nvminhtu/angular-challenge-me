@@ -3,8 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  OmdbApi: 'cb5de8d9-52a7-4351-9a7f-3b1a788ba4fa',
+  production: false
 };
 
 /*
