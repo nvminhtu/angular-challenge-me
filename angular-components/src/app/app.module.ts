@@ -1,22 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToggleComponent } from './components/content-projection/toggle/toggle.component';
 import { ToggleWrapperComponent } from './components/content-projection/toggle-wrapper/toggle-wrapper.component';
+import { IsAdultPipe } from './pipes/is-adult.pipe';
+import { UserListComponent } from './components/users/user-list/user-list.component';
+import { PluralPipePipe } from './pipes/plural-pipe.pipe';
+import { CustomAsyncPipe } from './pipes/custom-async.pipe';
+import { WordCountPipe } from './pipes/word-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToggleComponent,
-    ToggleWrapperComponent
+    ToggleWrapperComponent,
+    IsAdultPipe,
+    UserListComponent,
+    PluralPipePipe,
+    CustomAsyncPipe,
+    WordCountPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

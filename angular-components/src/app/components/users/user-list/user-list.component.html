@@ -1,0 +1,61 @@
+<h1 class="text-2xl">List of users</h1>
+
+<h2>Word counter</h2>
+<p>Word Count Pipe: {{ introText }} - {{ introText | wordCount }}</p>
+<br />
+<h2>Name Async</h2>
+<!-- <p>{{ sloganText | async }}</p> -->
+<p>{{ sloganText | customAsync }}</p>
+<br />
+<h2 class="text-xl">Plural Pipe: Detect the single/plural nouns</h2>
+<div>
+  Number of stations: {{ numberOfStations }} stop{{
+    numberOfStations | pluralPipe
+  }}
+</div>
+
+<div>
+  Number of heroes: {{ numberOfHeroes }} hero{{ numberOfHeroes | pluralPipe }}
+</div>
+<br /><br />
+<div class="grid grid-cols-2 gap-2">
+  <div>
+    <h4 class="text-xl pb-10">Full user list (no Pipe)</h4>
+    <div *ngFor="let user of users">{{ user.name }} - {{ user.age }}</div>
+  </div>
+  <div>
+    <div class="ml-4">
+      <h4 class="text-xl pb-10">Adult user list (make a Pipe)</h4>
+      <div *ngFor="let user of users | isAdult">
+        {{ user.name }} - {{ user.age }}
+      </div>
+    </div>
+  </div>
+  <div>
+    <input
+      type="text"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      name="Name"
+      placeholder="Name"
+      [(ngModel)]="newUser.name"
+    />
+    <input
+      type="number"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      name="number"
+      [(ngModel)]="newUser.age"
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      (click)="addUser()"
+    >
+      Add
+    </button>
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      (click)="addUserByUpdateReference()"
+    >
+      Add fix (by Change Reference)
+    </button>
+  </div>
+</div>
