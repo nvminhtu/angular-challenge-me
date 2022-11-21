@@ -13,6 +13,8 @@ import { WordCountPipe } from './pipes/word-count.pipe';
 import { AngularPipeComponent } from './components/angular-pipe/angular-pipe.component';
 import { AgePipe } from './pipes/age.pipe';
 import { FilternamePipe } from './pipes/filtername.pipe';
+import { FilesizePipe } from './pipes/filesize.pipe';
+import { DefaultImagePipe } from './pipes/default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { FilternamePipe } from './pipes/filtername.pipe';
     AngularPipeComponent,
     AgePipe,
     FilternamePipe,
+    FilesizePipe,
+    DefaultImagePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
