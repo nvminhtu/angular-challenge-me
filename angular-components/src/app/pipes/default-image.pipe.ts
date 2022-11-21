@@ -12,11 +12,17 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DefaultImagePipe implements PipeTransform {
   transform(value: string, fallback: string): string {
     let image: string = '';
-    if (value) {
-      image = value;
-    } else {
-      image = fallback; // link default image
-    }
+
+    // version 01:
+    // if (value) {
+    //   image = value;
+    // } else {
+    //   image = fallback; // link default image
+    // }
+    // return image;
+
+    // version 02:
+    value ? (image = value) : (image = fallback);
     return image;
   }
 }
