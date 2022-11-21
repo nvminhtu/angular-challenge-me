@@ -1,0 +1,10 @@
+<h2 class="text-xl">Angular Pipe - Default</h2>
+<div>My birthday is {{ birthday | date }}</div>
+<div>My birthday is {{ birthday | date: "dd/MM/yyyy" }}</div>
+<div>My birthday is {{ birthday | date: "longDate" }}</div>
+<div>My birthday is {{ birthday | date: "fullDate" }}</div>
+<br />
+<h2 class="text-xl">Chaining Pipe</h2>
+<div>{{ birthday | date | uppercase }}</div>
+<div>My age is {{ birthday | age }}</div>
+<div>My age is {{ birthday | age: true }}</div>

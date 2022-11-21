@@ -10,6 +10,8 @@ import { UserListComponent } from './components/users/user-list/user-list.compon
 import { PluralPipePipe } from './pipes/plural-pipe.pipe';
 import { CustomAsyncPipe } from './pipes/custom-async.pipe';
 import { WordCountPipe } from './pipes/word-count.pipe';
+import { AngularPipeComponent } from './components/angular-pipe/angular-pipe.component';
+import { AgePipe } from './pipes/age.pipe';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { WordCountPipe } from './pipes/word-count.pipe';
     PluralPipePipe,
     CustomAsyncPipe,
     WordCountPipe,
+    AngularPipeComponent,
+    AgePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
