@@ -8,3 +8,14 @@
 <div>{{ birthday | date | uppercase }}</div>
 <div>My age is {{ birthday | age }}</div>
 <div>My age is {{ birthday | age: true }}</div>
+
+<input type="text" placeholder="Search ..." [(ngModel)]="filteredName" />
+
+<hr />
+
+<input type="text" placeholder="Enter a name to add" #newName />
+<button (click)="addName(newName)">Add Name</button>
+
+<ul>
+  <li *ngFor="let name of names | filtername: filteredName">{{ name }}</li>
+</ul>

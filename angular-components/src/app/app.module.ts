@@ -12,6 +12,7 @@ import { CustomAsyncPipe } from './pipes/custom-async.pipe';
 import { WordCountPipe } from './pipes/word-count.pipe';
 import { AngularPipeComponent } from './components/angular-pipe/angular-pipe.component';
 import { AgePipe } from './pipes/age.pipe';
+import { FilternamePipe } from './pipes/filtername.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AgePipe } from './pipes/age.pipe';
     WordCountPipe,
     AngularPipeComponent,
     AgePipe,
+    FilternamePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
