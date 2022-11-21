@@ -48,7 +48,7 @@
 
 - Dev.to
 - Hackernoon
-- Medium
+- Mediumgit
 - Hashnode.com
 - Freecodecamp
 - https://zoaibkhan.com/blog/create-a-fast-infinite-scrolling-list-in-angular/
